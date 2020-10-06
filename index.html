@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Paola Maddaluno Application</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat+Alternates:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="bannerNavbar">
+    <header id="headerContainer">
+      <img id="animLogo" src="img_animatedLogo.gif" alt="Paola Maddaluno animated logo">
+      <div id="htContainer">
+        <h1 id="headerTitle">Differently Young!</h1>
+        <p id="hSubtitle" class="hsTitle">When age it's only a number
+        <p>
+      </div>
+      <img id="virtualReality"
+        src="https://images2.corriereobjects.it/methode_image/2019/04/27/LiberiTutti/Foto%20LiberiTutti%20-%20Trattate/3Danziani-kNlF-U31101840612000p3G-1224x916@Corriere-Web-Sezioni-593x443.jpg?v=20190502233730"
+        alt="Anziani e realtà virtuale: la tecnologia aiuta a vivere meglio (e a guarire)">
+    </header>
+    <nav id="navbar">
+      <ul id="navbar-list">
+        <li class="list"><a id="home" class="anchor-text" href="#">home</a></li>
+        <li class="list"><a id="play" class="anchor-text" href="#gameContainer">play</a></li>
+        <li class="list"><a id="contact" class="anchor-text" href="#Kit">contacts</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+  <section id="dy">
+    <div>
+      <p>A little joking, a little vitalistic, the "differently young" Italian expression defines a person who has
+        reached more or less the threshold of "advanced maturity", between fifty and sixty years. A person aware of
+        having gained a lot in energy,
+        spirit and life expectancy, compared to the counterparts even half a century ago.</br>
+        A person that the job market bias would tend to "expel", in favour of a more flexible and malleable generation,
+        because less expensive and more ready to master technologies such as the digital one.
+        <a href="https://www.treccani.it/magazine/lingua_italiana/articoli/parole/diversamente_giovane.html"
+          target="_blank" style="font-weight: bold; color:#fb0091">original version<a></p>
+
+      <p> When I decided to change career I received a lot of negatives comments that made me think I was too old for
+        this change, and the 2015 movie The Intern came to my mind. There are a lot of conference and a huge effort to
+        raise awareness in the tech industry and not only, where diversity in tech it's a common topic, but what is
+        really diversity? Can it work in other industries too? I decided that I will start writing a blog about my
+        journey, trying to give an answer to these questions.
+        In the meantime you can enjoy the movie. </p>
+    </div>
+    <img id="locandina" src="https://www.joblo.com/assets/images/oldsite/posters/images/full/the-intern-new-poster.jpg"
+      alt="the intern movie poster directed by Nancy Meyers with Robert De Niro, Anne Hathaway" />
+  </section>
+
+  <main>
+
+    <!-- game section -->
+    <div id="gameContainer">
+      <h2 id="gameTitle">Two truths and One lie</h2>
+      <div id="instruction">
+        <p>Let's get to know, playing together. Click on the button play to discover the 3 sentences and on reset to
+          restart the game. Make a guess one of the three is false.</p>
+      </div>
+
+      <div id="gameButtons">
+        <!--   play button  show a list of 3 sentences -->
+        <button id="btnPlay" class="btnhover">Play</button>
+        <!--   reset button  display random sentences -->
+        <button id="btnReset" class="btnhover">Reset</button>
+        <!--   quit button  change visibilty to hidden -->
+        <button id="btnQuit" class="btnhover">Quit</button>
+      </div>
+      <div id="gameSentences">
+        <ol class="SentContainer">
+          <li id="one">In the last 4 months I learned to bake bread.</li>
+          <li id="two" class="lie">I ran a marathon.</li>
+          <li id="three">My auntie find us after 70 years.</li>
+        </ol>
+        <div id="input-box">
+          <p>Take a guess:</p>
+          <button class="guess" data-answer="1">1</button>
+          <button class="guess" data-answer="2">2</button>
+          <button class="guess" data-answer="3">3</button>
+        </div>
+        <!-- end game sentences -->
+      </div>
+      <div id="winnerContainer" class="result-display">
+        <img id="winnerImg" class="gameImg" src="trophy.png" alt="winner trophy" />
+        <p class="result">congratulations you win, this was the lie!</p>
+      </div>
+      <div id="loserContainer" class="result-display">
+        <img id="loserImg" class="gameImg" src="sad.png" alt="sad face from iconixar" />
+        <p class="result">"Nope, this is the truth! Try again"</p>
+      </div>
+
+      <!-- end game container -->
+    </div>
+
+
+    <div id="decoContainer">
+      <img class="threeDots" src="dots.png" alt="decoration images three dots">
+      <img class="threeDots" src="dots.png" alt="decoration images three dots">
+      <img class="threeDots" src="dots.png" alt="decoration images three dots">
+    </div>
+    <article id="articleContainer">
+      <img id="portraitPic" src="PortraitPaolaM.png" alt="Paola Maddaluno">
+      <div id="introContainer">
+        <h2 id="intro-title">Paola Maddaluno</h2>
+        <p class="subtitle">junior frontend developer</p>
+        <!-- presentation -->
+        <p>Sometimes people works for years before asking themselves if they are truly happy about their life and
+          achievements.
+          In the tourism industry, the high people turn-over and long working hours can lead to easily lose connection
+          with ourselves, our real passions or our goals in life.</p>
+        <p>After almost 20 years, working in tourism and student's program exchange, I was missing myself and my
+          creativity. So when the opportunity of a career change arose in October 2018, I took it! </p>
+
+        <p>I got my first job as a marketing assistant for an e-commerce. The first thing I had to learn was to set my
+          thunderbird signature in HTML and CSS. This is also how my journey with coding started.</p>
+        <p>I signed up for the first workshop in town and started self-teaching me. I enjoy the creativity and the
+          constant use of your brain to find a solution or learning something new.</br>
+
+          During my journey, I discovered opportunities for learning to code in a safer environment where
+          underrepresented groups, career changer and less young people are considered a plus, and every one is aimed by
+          sharing the knowledge.</p>
+        <p>This made me confident, and because I am not afraid of changes or re-start my life in a new country; in June
+          2019, I decided to take a break from work and I invested all my time, energies and savings to to pursue my
+          Life Project, became a web developer. </br>
+          In the last year I spent my days building projects, writing/reading about coding, following workshops, lessons
+          and conferences.</p>
+
+        <p>After being a student at codebar I joined this charity, first as an organizer and now as HTML, CSS coach. I
+          love working with developers from industry and being involved in the community.</p>
+
+        <p> Unfortunately when I was ready for my job-hunting Covid-19 happened. This impacted to everyone, but I think
+          for a career changer over 40y.o. made it tougher! To make this change happen, I understood that I needed a
+          lift
+          up, so I decided to try a bootcamp to improve my coding skills and learn backend languages. Also because I met
+          a lot of career changer who thanking to bootcamps were able to create that bridge who led them to a new career
+          path.
+        </p>
+
+      </div>
+    </article>
+
+
+    <!-- contacts -->
+    <div id="Kit">
+      <h2>Keep in Touch</h2>
+      <a href="mailto:paola.d.madd@gmail.com"> <img class="socialIcons" src="email.png"
+          alt="email icon created by Freepik from Flaticon"></a>
+      <a href="https://www.linkedin.com/in/paola-m-0bb05795/" target="_blank"> <img class="socialIcons"
+          src="linkedin.png" alt="icon created by Freepik from Flaticon"></a>
+      <a href="https://twitter.com/PDM51893711" target="_blank"> <img class="socialIcons" src="twitter.png"
+          alt="twitter icon"></a>
+      <a href="https://github.com/PaolaDMadd" target="_blank"><img class="socialIcons" src="GitHub-pink.png"
+            alt="GitHub icon"></a>
+    </div>
+
+
+  </main>
+  <footer id="footer">
+    <p id="footerText">created by | Paola Maddaluno | 2020</p>
+    <p class="credits">Credits: Icon sad face made by <a class="credits"
+        href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a class="credits"
+        href="https://www.flaticon.com/" title="Flaticon">
+        Flaticon.</a>
+      All contact icons (except github) are xmade by <a class="credits" href="https://www.flaticon.com/authors/freepik"
+        title="Freepik">Freepik</a> from <a class="credits" href="https://www.flaticon.com/" title="Flaticon">
+        Flaticon</a>
+    </p>
+  </footer>
+  <!-- Scripts -->
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
