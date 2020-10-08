@@ -1,184 +1,208 @@
-
-*{
+* {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 body {
   background: #f5f5f5;
-  line-height: 1;
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: clamp(14px, 2.5vw, 20px);
+  line-height: 1.5;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: clamp(12px, 2.5vw, 20px);
   color: #625261;
 }
 
-p{
+p {
   padding: 0.3em;
   text-align: justify;
   text-justify: inter-word;
-  
 }
 
-:not(.hsTitle, .subtitle, a){
+:not(.hsTitle, .subtitle, a) {
   padding: 0.3em;
 }
 
-#bannerNavbar{
+#bannerNavbar {
   position: sticky;
   overflow: hidden;
   width: 100%;
-  top:0;
+  top: 0;
+  z-index: 1;
 }
-#headerContainer{
+#headerContainer {
   width: 100%;
-  border-bottom: 0.2em solid #6F12FF;
-  font-family: 'Audiowide', cueive;
+  border-bottom: 0.1em solid #6f12ff;
+  font-family: "Audiowide", cueive, Open sans-serif;
   display: flex;
   justify-content: flex-start;
 }
 
- #htContainer{
-  background: #6F12FF;
+#htContainer {
+  background: #6f12ff;
   height: 90px;
   width: 90%;
 }
 
-#virtualReality{
+#virtualReality {
   height: 90px;
-  width:150px
+  width: 150px;
 }
 
-#hSubtitle, #headerTitle, #intro-title{
+#hSubtitle,
+#headerTitle,
+#intro-title,
+.dyTitle{
   color: #fb0091;
   padding: 0.2em;
   text-align: center;
 }
-#hSubtitle, #headerTitle{
+
+#hSubtitle,
+#headerTitle {
   vertical-align: middle;
+  line-height: 1;
 }
 
-#animLogo{
+#animLogo {
   width: 90px;
   height: 90px;
 }
 
-
-#navbar{
+#navbar {
   padding: 0.2em;
   background: #f5f5f5;
-  /* position: fixed;
-  overflow: hidden; */
   width: 100%;
-
 }
 
-#navbar-list{
+#navbar-list {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
 }
-.anchor-text{
+.anchor-text {
   font-size: 20px;
   text-decoration: none;
   color: #625261;
 }
 
-.list{
- padding: 0.5em;
+.list {
+  padding: 0.5em;
 }
 
-#dy{
+#dy {
   padding: 3em;
   margin: 1em;
 }
 
-#locandina{
+#locandina {
   width: 100%;
-  height:500px;
-  object-fit: scale-down; 
+  height: 500px;
+  object-fit: scale-down;
   margin: auto;
 }
 
-#decoContainer{
-  display:flex;
+#decoContainer {
+  display: flex;
   justify-content: space-evenly;
   margin: 50px auto;
-  
+  background: #625261;
+  height: 140px;
 }
 
-.threeDots{
-  width: 120px;
-  height:120px;
+.threeDots {
+  width: 90px;
+  height: 90px;
+  animation: bounce 1.5s cubic-bezier(0.5, 0.05, 1, 0.5) infinite alternate
+    backwards;
 }
 
-#gameContainer{
+.delay1 {
+  animation-delay: 0.2s;
+}
+
+.delay2 {
+  animation-delay: 1s;
+}
+
+.delay3 {
+  animation-delay: 1.8s;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 50px, 0);
+  }
+}
+
+#gameContainer {
   width: 80%;
   margin: auto;
-  border: 0.5em solid #6F12FF;
+  border: 0.5em solid #6f12ff;
   padding: 3em;
 }
 
-#gameButtons{
+#gameButtons {
   text-align: center;
-  margin: 50px;
+  margin: 20px 50px 0px 50px;
   display: flex;
   padding: 0.2em;
   justify-content: space-around;
 }
 
- button{
+button {
   color: #f5f5f5;
   font-size: inherit;
-  font-family:inherit;
+  font-family: inherit;
   padding: 0.2em;
-  border-radius:  0.2em;
+  border-radius: 0.2em;
   background: #fb0091;
 }
 
 .btnhover:hover {
   background: #f5f5f5;
   color: #fb0091;
-  box-shadow: 10px 5px 5px #6F12FF;
+  box-shadow: 10px 5px 5px #6f12ff;
 }
 
-#gameSentences{
-  width:50%;
-  margin:auto;
+#gameSentences {
+  width: 50%;
+  margin: 0 auto;
   padding: 1em;
-  display:none;  
+  display: none;
 }
 
-.SentContainer{
+.SentContainer {
   padding: 0.5em;
   margin: 0.5em auto;
   width: 100%;
 }
 
-#input-box{
-  padding: 0.5em;
-  margin: 0.5em;
-  font-size: inherit;
-  font-family: inherit;
-  color:inherit;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-
-
-
-.guess{
+#inputBox {
   padding: 0.5em;
   margin: 0.5em;
   font-size: inherit;
   font-family: inherit;
   color: inherit;
-  width:35px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
+#inputBox p{
+  text-align: center;
+}
 
-.result-display{
+.guess {
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: inherit;
+  font-family: inherit;
+  color: #f5f5f5;
+}
+
+.result-display {
   width: 90%;
   margin: auto;
   justify-content: space-around;
@@ -186,106 +210,102 @@ p{
   display: none;
 }
 
-.gameImg{
-  width:50%;
-  height:100px;
-  margin:auto;
+.gameImg {
+  width: 50%;
+  height: 100px;
+  margin: auto;
   object-fit: scale-down;
 }
 
-.result{
+.result {
   color: #fb0091;
   padding: 0.2em;
   vertical-align: middle;
-  width:50%;
-  margin:auto;
-}
- 
-#articleContainer{
-  display:flex;
-  
+  width: 50%;
+  margin: auto;
 }
 
-#portraitPic{
-  width:40%;
+#articleContainer {
+  display: flex;
+}
+
+#portraitPic {
+  width: 40%;
   object-fit: scale-down;
   margin: auto;
   vertical-align: middle;
 }
 
-#introContainer{
-  width: 60%; 
+#introContainer {
+  width: 60%;
   margin: auto;
   padding: 2em;
 }
 
-#intro-title, #gameTitle {
-   text-align: center;
-    color: #fb0091;
+#intro-title,
+#gameTitle {
+  text-align: center;
+  color: #fb0091;
 }
 
-.subtitle{
+.subtitle {
   text-align: center;
   color: #625261;
   margin: 2px;
 }
 
-#Kit{
+#Kit {
   display: flex;
   justify-content: space-around;
 }
-.socialIcons{
-  width:40px;
-  height:40px;
+.social {
+  font-size: 30px;
+  color: #fb0091;
 }
 
-#footer{
-  width:100%;
-  background: #6F12FF;
-  font-family: 'Audiowide', cueive;
+#footer {
+  width: 100%;
+  font-family: "Audiowide", cueive open sans-serif;
   font-size: clamp(12px, 2.5vw, 14px);
-  color: #fb0091; 
-  height: 20px;
+  color: #fb0091;
 }
 
-#footerText{
-  vertical-align: middle; 
+#footerText {
+  vertical-align: middle;
   text-align: center;
+  background: #6f12ff;
 }
 
-.credits{
-  color: #625261;
-  font-size: 12px;
-  padding:0.3em;
-  border-bottom: 0.1em solid #6F12FF ;
-}
-
-.credits a{
-  text-decoration: none;
+.credits {
+	color: #625261;
+	font-size: 12px;
+	padding: 0.3em;
+	border-bottom: 0.1em solid #6f12ff;
 }
 
 
-
-  @media screen and (max-width: 750px){
-    
-    #articleContainer{
-      flex-direction: column;
-      }
-  
-    #introContainer{
-    width: 90%; 
-      }
-  
-    .threeDots{
-      width: 50px;
-      height: 50px;
-      }
-
-      .gameImg{
-        height:50px;
-      }
-
-      .result-display{
-        flex-wrap: wrap;
-      }
+@media screen and (max-width: 750px) {
+  #articleContainer {
+    flex-direction: column;
   }
+
+  #introContainer {
+    width: 90%;
+  }
+
+  #decoContainer {
+    height: 100px;
+  }
+  .threeDots {
+    width: 50px;
+    height: 50px;
+  }
+
+  .gameImg {
+    height: 50px;
+  }
+
+  .result-display {
+    flex-wrap: wrap;
+  }
+}
